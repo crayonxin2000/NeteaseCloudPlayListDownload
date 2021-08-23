@@ -10,7 +10,7 @@ from subprocess import call
 from tqdm import tqdm
 
 from requests.api import get, head
-host="http://152.136.159.57:3000" # 网易云api地址
+host="https://netease-cloud-music-api-gamma-orpin.vercel.app" # 网易云api地址
 header={"Content-Type": "application/x-www-form-urlencoded;charset=utf-8"} # 请求头
 config_="user.json" # 配置文件
 
