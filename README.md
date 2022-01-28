@@ -76,7 +76,7 @@
 输入歌单id，然后按回车键，脚本会收集歌单中所有歌曲的信息
 如下图
 
-![获取歌单中的歌曲](https://img-blog.csdnimg.cn/5f2b90fe59214e1aab9e39ac87ce0e76.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NyYXlvbnhpbjIwMDA=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b9c1c1480bbe40a889a53f0bfd8c8e3b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQ3JheW9u6ZGr,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
 注意：这里的进度条不是下载的进度条，这是分析id得到歌单下所有歌曲信息的进度条。你歌单的音乐越多，这步花费的时间越长。进度完成之后，会提示你是否下载。
 
 补充：如果你不知道歌单的id怎么获取，请在文末“[补充-获取歌单id](#getid)”一节中了解。
