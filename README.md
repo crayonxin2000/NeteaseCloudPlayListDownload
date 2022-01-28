@@ -53,12 +53,12 @@
 
 # 使用方法
 
-##  1. <a name='1、cmd启动脚本'></a>1、cmd启动脚本
+## 1、cmd启动脚本
 调出cmd，cd切到文件所在目录，并输入python musics.py
 如下图
 
 ![python musics.py](https://img-blog.csdnimg.cn/625f8ec8ea524525897e3b50b50423d3.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NyYXlvbnhpbjIwMDA=,size_16,color_FFFFFF,t_70#pic_center)
-##  2. <a name='2、登录'></a>2、登录
+##  2、登录
 <font color="#ee0000">**如果你要下载自己创建的歌单，一定要登录!** </font>
 
 如果你下载的是那种公共的歌单（好几万播放量那种），是不用登录也可以下载的。
@@ -72,7 +72,7 @@
 
 
 
-##  3. <a name='3、输入歌单id'></a>3、输入歌单id
+##  3、输入歌单id
 输入歌单id，然后按回车键，脚本会收集歌单中所有歌曲的信息
 如下图
 
@@ -80,7 +80,7 @@
 注意：这里的进度条不是下载的进度条，这是分析id得到歌单下所有歌曲信息的进度条。你歌单的音乐越多，这步花费的时间越长。进度完成之后，会提示你是否下载。
 
 补充：如果你不知道歌单的id怎么获取，请在文末“[补充-获取歌单id](#getid)”一节中了解。
-##  4. <a name='4、下载'></a>4、下载
+##  4、下载
 会提示你是否下载
 输入“y”
 会提示文件保存路径和idm安装路径。
@@ -89,7 +89,7 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/e994ab66ab624bbab11c772c365b4d6f.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NyYXlvbnhpbjIwMDA=,size_16,color_FFFFFF,t_70#pic_center)
 将下载队列添加到idm中，脚本的使命就完成了。
 剩下的活交给idm就行了。
-##  5. <a name='4、等待。。。'></a>4、等待。。。
+## 5、等待。。。
 不一会，idm队列就开始工作了，耐心等待下载就行了
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8239fb0035fe440fbad2efd744fa8e1f.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NyYXlvbnhpbjIwMDA=,size_16,color_FFFFFF,t_70#pic_center)

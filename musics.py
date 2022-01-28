@@ -1,6 +1,5 @@
 import os
 import json
-from typing import Collection
 import requests
 import traceback
 import time
