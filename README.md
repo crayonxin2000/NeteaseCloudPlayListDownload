@@ -15,7 +15,7 @@
 
 # 前言
 网易云平台的音乐的歌曲需要会员才能下载，而且使用其他工具下载此平台上的音乐大多只能一首一首下载。而我想要的是批量下载整个歌单的音乐。
-所以我只做了这个脚本。很便利的下载网某云歌曲。
+所以我只做了这个脚本。很便利的下载网易云歌曲。
 我已经将脚本文件上传到github仓库中，欢迎交流学习
 [python+IDM批量下载网易云音乐歌单歌曲](https://github.com/crayonxin2000/NeteaseCloudPlayListDownload)，这个脚本的详细介绍也可以去仓库里看。
 
@@ -35,9 +35,21 @@
 
  1. python3
  2. python的一些库：requests；subprocess；tqdm
-（没有的使用pip安装）
+（没有的使用pip安装，在requirements.txt已列出）
+```python
+import os
+import json
+import traceback
+import requests
+import time
+import sys
+from subprocess import call
+from tqdm import tqdm
+import cv2
+import base64
+import skimage.io
+```
 
- ![python的一些库](https://img-blog.csdnimg.cn/2e80636f7564459799aa4998e0892e52.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NyYXlvbnhpbjIwMDA=,size_16,color_FFFFFF,t_70#pic_center)
  
  4. IDM
 （歌单一般包含大量歌曲，使用idm多线程下载较好，而且idm应该电脑必备吧，用的人多。）
@@ -66,7 +78,7 @@
 输入“y”或者"n"
 
 我输入“y”
-第一次登录会提示输入账号密码，我已经输入过了，自动登录了。
+在第一版中我使用账号密码登录，但是考虑到安全性，我再第二版换成了扫描二维码登录，这样更加方便一些
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2d018c2c0c574e9db537aceb4b98162e.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NyYXlvbnhpbjIwMDA=,size_16,color_FFFFFF,t_70#pic_center)
 
@@ -117,7 +129,7 @@ def publishDownLoad(ids,cookie) :
 # idm下载
 def IDMdownload(dl,file):
 ```
-在这里贴一下idm下载的方法。普通下载本来有的，我觉得下载可能太慢我没有写（其实我懒）：
+在这里贴一下idm下载的方法：
 
 ```python
 def IDMdownload(dl,file):# dl参数是列表，每个列表项为字典
