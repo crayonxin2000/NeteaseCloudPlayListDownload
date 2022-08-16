@@ -59,8 +59,7 @@ import skimage.io
 [python+IDM批量下载网某平台音乐歌单歌曲](https://github.com/crayonxin2000/NeteaseCloudPlayListDownload)
 文件放的位置无所谓。
 **方式2**
-点击下方链接下载
-[csdn站下载](https://download.csdn.net/download/Crayonxin2000/21462418)
+
 <br>
 
 # 使用方法
